@@ -7,7 +7,7 @@
 
 
 <a href="URL del video">
-  <img src="URL de la imagen miniatura del video" alt="Título del video">
+  <img src="URL de la imagen miniatura del video" alt="Link Portfolio">
 </a>
 
 
@@ -17,14 +17,34 @@
  <p> seccion para loguearse y que devuelva el token para poder editar o eliminar datos</p>
  
  
- <h2> metodo Get = (no necesita token para lectura)</h2>
- <p> https://apbackendproyecto.herokuapp.com/api/educacion ---> trae todas las educaciones del usuario logueado.</p>
-<p> https://apbackendproyecto.herokuapp.com/api/project ----> trae todos los proyectos del usuario logueado.</p>
-<p> https://apbackendproyecto.herokuapp.com/api/api/experience ----> trae las experiencias del usuario logueado.</p>
-<p> https://apbackendproyecto.herokuapp.com/api/api/usuario/1 ----> trae el perfil del usuario logueado.</p>
-<p> https://apbackendproyecto.herokuapp.com/api/api/skill ----> trae las skills del usuario.</p>
-<p>PARA INTERACTUAR CON LOS METODOS POST PUT Y DELETE NECESITA LOGUEARSE COMUNIQUESE POR MAIL O INSTAGRAM
-            PARA DARLE EL USUARIO Y CONTRASEÑA SI LO DESEA</p>
+ <h2> metodos Get = (no necesitan token para lectura)</h2>
+ 
+ <p>Para los metodos Get no es necesario Utilizar Token, Se podran consultar todos los datos sin necesidad de unJWT. Sin embargo para los metodos de edicion o carga de datos POST PUT Y DELETE. se necesitara usuario y password para generar el JWT. Este se obtiene en el metodo post de Loguin.
+ 
+ <h2>Treae todos los datos de Educacion del Usuario Logueado</h2>
+ <p> https://apbackendproyecto.herokuapp.com/api/educacion</p>
+ 
+ <h2>Treae todos los datos de Proyectos del Usuario Logueado</h2>
+<p> https://apbackendproyecto.herokuapp.com/api/project</p>
+
+<h2>Treae todos los datos de Experiencias del Usuario Logueado</h2>
+<p> https://apbackendproyecto.herokuapp.com/api/api/experience</p>
+
+<h2>Treae todos los datos Personales/perfil del Usuario con ID especificada en la Ruta</h2>
+<p> https://apbackendproyecto.herokuapp.com/api/api/usuario/1 .</p>
+
+<h2>Treae todos los datos de Skills del Usuario Logueado</h2>
+<p> https://apbackendproyecto.herokuapp.com/api/api/skill </p>
+
+<footer>
+<h2>PARA INTERACTUAR CON LOS METODOS POST PUT Y DELETE NECESITA LOGUEARSE COMUNIQUESE POR MAIL O INSTAGRAM
+            PARA DARLE EL USUARIO Y CONTRASEÑA SI LO DESEA</h2>
+ <h4> Tecnologias Utilizadas</h4>
+ <p> Java version 8 </p>
+ <p> Spring version 2.5.5 </p>
+ <p> Mysql version 5</p>
+ <p> IDE utilizado : NetBeans </p>
+ </footer>
            
             
             
